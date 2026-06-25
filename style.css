@@ -1,4 +1,3 @@
-/*초기세팅*/
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     cursor: none;
 }
 
-/* ===== Cursor Design Start ===== */
 .cursor {
     width: 40px;
     height: 40px;
@@ -21,24 +19,23 @@ body {
     position: fixed;
     pointer-events: none;
     mix-blend-mode: difference;
-    z-index: 9999;
+    z-index: 99999;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform .3s ease;
-
+    transition: transform 0.3s ease;
 }
-
 
 .cursor.active {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-/* ==== Header Start ==== */
 header {
     width: 100%;
     height: 100px;
     position: fixed;
-    background-color: #000000;
-    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 9999;
 }
 
 .header_inner {
@@ -51,14 +48,13 @@ header {
     align-items: center;
 }
 
-/* 로고 */
 .logo img {
     width: 72px;
     height: 72px;
     display: block;
+    object-fit: contain;
 }
 
-/* 메뉴 */
 .menu {
     display: flex;
     gap: 48px;
@@ -73,7 +69,6 @@ header {
     letter-spacing: 1px;
 }
 
-/* 오른 메뉴 그룹 */
 .right_menu {
     font-family: "Anton", sans-serif;
     display: flex;
@@ -81,7 +76,6 @@ header {
     gap: 48px;
 }
 
-/* 문의하기 버튼 */
 .contact_btn {
     padding: 18px 40px;
     border: 2px solid #fff;
@@ -93,34 +87,26 @@ header {
     transition: all 0.3s ease;
 }
 
-.cursor.active {
-    transform: translate(-50%, -50%) scale(1.5);
-}
-
 .contact_btn:hover {
     background: white;
     color: black;
 }
 
-/* ==== Header End ==== */
-
-/* === hero Start === */
 .hero {
+    width: 100%;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .hero video {
     width: 100%;
     max-width: 675px;
-    margin-top: 120px;
     height: auto;
     display: block;
 }
 
-/* === hero End === */
-
-/* === About Start === */
 .about {
     padding: 300px 0;
     display: flex;
@@ -128,13 +114,12 @@ header {
     align-items: center;
 }
 
-/* 소개 문구 */
 .about_text {
     text-align: center;
 }
 
 .about_text p {
-    font-family: "pretendard", sans-serif;
+    font-family: "Pretendard", sans-serif;
     font-size: 24px;
     font-weight: 300;
     line-height: 1.6;
@@ -145,7 +130,6 @@ header {
     font-weight: 600;
 }
 
-/*수치 영역*/
 .about_stats {
     width: 100%;
     max-width: 1440px;
@@ -155,16 +139,14 @@ header {
     align-items: center;
 }
 
-/* 숫자 카드 */
-.stat_item {
+.stats_item {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* SINCE & PROJECT */
-.stat_label {
+.stats_label {
     font-family: "Anton", sans-serif;
     font-size: 24px;
     line-height: 1;
@@ -172,24 +154,19 @@ header {
     margin-bottom: 20px;
 }
 
-/*2001 & 1000+ */
-.stat_item h2 {
+.stats_item h2 {
     font-size: 76px;
     font-weight: 700;
     line-height: 1;
     color: #fff;
 }
 
-/*가운데 세로선*/
 .stat_divider {
     width: 1px;
     height: 128px;
     background-color: #808080;
 }
 
-/*=== About End === */
-
-/*=== Project Start === */
 .project {
     max-width: 1440px;
     margin: 0 auto;
@@ -202,7 +179,6 @@ header {
     gap: 24px;
 }
 
-/* 타이틀 영역 */
 .section_title {
     text-align: center;
     margin-bottom: 80px;
@@ -217,13 +193,12 @@ header {
 
 .section_title p {
     margin-top: 24px;
-    font-family: "pretendard", sans-serif;
+    font-family: "Pretendard", sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: #fff;
 }
 
-/* Card */
 .project_card {
     display: flex;
     overflow: hidden;
@@ -231,7 +206,6 @@ header {
     background: #161616;
 }
 
-/* 좌측 콘텐츠 */
 .project_content {
     width: 50%;
     padding: 80px 64px;
@@ -240,7 +214,7 @@ header {
 }
 
 .project_content h3 {
-    font-family: "pretendard", sans-serif;
+    font-family: "Pretendard", sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.3;
@@ -249,7 +223,7 @@ header {
 }
 
 .project_content p {
-    font-family: "pretendard", sans-serif;
+    font-family: "Pretendard", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
@@ -258,14 +232,13 @@ header {
     margin-bottom: 80px;
 }
 
-/* Technique */
 .technique {
     margin-top: auto;
 }
 
 .technique span {
     display: block;
-    font-family: "pretendard", sans-serif;
+    font-family: "Pretendard", sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -283,14 +256,13 @@ header {
     padding: 6px 18px;
     border-radius: 999px;
     background: #333;
-    font-family: "pretendard", sans-serif;
+    font-family: "Pretendard", sans-serif;
     font-size: 14px;
     line-height: 1.6;
     font-weight: 700;
     color: #fff;
 }
 
-/* Image */
 .project_image {
     width: 50%;
 }
@@ -302,9 +274,6 @@ header {
     object-fit: cover;
 }
 
-/*=== Project End === */
-
-/*=== Contact Start === */
 .contact {
     max-width: 1440px;
     width: 100%;
@@ -316,7 +285,6 @@ header {
     align-items: center;
 }
 
-/*Title */
 .contact_title {
     text-align: center;
 }
@@ -329,7 +297,6 @@ header {
     color: #fff;
 }
 
-/*Description*/
 .contact_description {
     margin-top: 48px;
     text-align: center;
@@ -344,7 +311,6 @@ header {
     margin-top: 8px;
 }
 
-/*Button*/
 .contact_button {
     margin-top: 80px;
     width: 420px;
@@ -367,29 +333,23 @@ header {
     color: #000;
 }
 
-/* 공통 */
 .character_left,
 .character_right {
     position: absolute;
     width: 180px;
 }
 
-/* 좌측 */
 .character_left {
     left: 40px;
     bottom: 120px;
 }
 
-/*우측*/
 .character_right {
     right: 0;
     top: 140px;
-    transform: translate(0) rotate(17deg);
+    transform: rotate(17deg);
 }
 
-/*=== Contact end === */
-
-/* ==== Footer Start ==== */
 .footer {
     background-color: #BBFF00;
     padding: 40px;
@@ -402,7 +362,6 @@ header {
     padding: 0 40px;
 }
 
-/*상단 정보 영역 */
 .footer_info h3 {
     font-family: "Pretendard", sans-serif;
     font-size: 24px;
@@ -424,7 +383,6 @@ header {
     margin-right: 8px;
 }
 
-/*구분선*/
 .footer_divider {
     width: 100%;
     height: 1px;
@@ -432,7 +390,6 @@ header {
     margin: 48px 0;
 }
 
-/*하단 영역*/
 .footer_bottom {
     display: flex;
     justify-content: space-between;
@@ -440,7 +397,6 @@ header {
     margin-bottom: 32px;
 }
 
-/*카피라이트*/
 .copyright {
     font-family: "Pretendard", sans-serif;
     font-size: 16px;
@@ -448,7 +404,6 @@ header {
     color: #000;
 }
 
-/*태그영역*/
 .footer_tag {
     display: flex;
     gap: 12px;
@@ -464,10 +419,7 @@ header {
     font-weight: 600;
 }
 
-/*대형 로고*/
 .footer_logo img {
     width: 100%;
     display: block;
 }
-
-/* ==== Footer End ==== */
